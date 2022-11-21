@@ -1,12 +1,16 @@
 import { StyleSheet, Text, View } from "react-native";
-import SplashPage from "./src/pages/splashPage";
-export default function App() {
+
+const SplashPage = () => {
   return (
     <View style={styles.container}>
-      <SplashPage></SplashPage>
+      <Text>PeerStudy</Text>
+      <Text>
+        Connect with Friends and get motivated when they study. Also minimize
+        distraction while using the app. And that for free
+      </Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -16,3 +20,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+
+export default SplashPage;
